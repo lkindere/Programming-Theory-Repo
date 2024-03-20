@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 9dad017b0370aa94495a819abe2745ae
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glaive
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485744179a892f9489a1b80ebdf47272
+      internalID: -732164426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72508834f2ed656449d2d96625a3684c
+      internalID: -239670078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2ad5e6344f0894fa02ca495e97c480
+      internalID: -1643897766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield_
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a294be8ee0b15ea4e89d7d2e5abb176d
+      internalID: -1752292433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scepter
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422eea37a48f22149a108cf055df345b
+      internalID: 1207452470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78485f692da51c42928d29042e8d354
+      internalID: -1484713351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f997b987ac04194b84feab65332ec8a
+      internalID: 1881077860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56cf0ce8b461684da4d7143d1b16748
+      internalID: 1240304327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97edaf62927f634ab4add484156740b
+      internalID: 1305168803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cc3f1cf3030444da6eded8ef994a49
+      internalID: 231717376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Axe
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca48c40ce1789bd48a347b6070400332
+      internalID: 403516781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quiver
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a9ccd39f67391499c762986c55171f
+      internalID: 634955053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spear
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ecf4155bd960d4b97741a41f5f8752
+      internalID: -1593755135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShield
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606571dcb5ceb5b4a920ea5285c643ea
+      internalID: 1365259863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d639dce703dc5f4eb49d42265e2d732
+      internalID: 474506550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bow_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb9a685da629df46a544f1e6a0fe910
+      internalID: 819724522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bow_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d6ee1699e3d1449bc6ef557786a139
+      internalID: 971711677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bow_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cfe6ec04cd8544583626d94e5ec57d
+      internalID: -760604763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClubBig
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c348cb5e0221a6042994e96578c1c4f5
+      internalID: 40983377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trident
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ba6658e40920349b5b84e761803180
+      internalID: 1997585562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scythe
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba7a74e3720b1d4aadb5e73fe6d92f9
+      internalID: -1669503101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fc3f0be09f962b640a6381e7453246df
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arrow_1: -239670078
+      Arrow_2: -1643897766
+      Axe: 403516781
+      BigShield: 1365259863
+      Bone_1: 1215583511
+      Bone_10: -1469419958
+      Bone_100: 801023569
+      Bone_101: -1738627499
+      Bone_102: 1582600103
+      Bone_103: 1638721881
+      Bone_104: -623836459
+      Bone_105: 870523484
+      Bone_106: 1258865678
+      Bone_107: 292432569
+      Bone_109: -1242823720
+      Bone_11: -167360824
+      Bone_110: -394638257
+      Bone_111: 2083237738
+      Bone_112: -1299405978
+      Bone_113: 395304723
+      Bone_115: 1778684778
+      Bone_116: -814185636
+      Bone_117: 1085346590
+      Bone_118: 774841374
+      Bone_119: -1772871070
+      Bone_12: 1321087797
+      Bone_121: -421060019
+      Bone_122: 419567481
+      Bone_123: -1527772035
+      Bone_125: 1053956782
+      Bone_127: -107209765
+      Bone_129: 1516299650
+      Bone_13: -599505769
+      Bone_130: -491937596
+      Bone_131: -454874716
+      Bone_132: 1524977553
+      Bone_133: 1972244265
+      Bone_134: 1529688054
+      Bone_135: 151130973
+      Bone_136: 1705450395
+      Bone_137: -809083869
+      Bone_138: -282008235
+      Bone_139: 818232587
+      Bone_14: 776807155
+      Bone_140: 912338205
+      Bone_141: 1831055477
+      Bone_142: 1773706055
+      Bone_143: 1141824333
+      Bone_144: -1781720263
+      Bone_145: -681433206
+      Bone_147: 1634656679
+      Bone_149: -1073260048
+      Bone_15: -238203824
+      Bone_150: -393866964
+      Bone_151: -1622486554
+      Bone_152: -405017205
+      Bone_153: -1700995708
+      Bone_154: -27854760
+      Bone_155: -808535016
+      Bone_156: -805549858
+      Bone_157: -1545431196
+      Bone_158: 2071988426
+      Bone_159: 282708723
+      Bone_16: 493609836
+      Bone_160: 141241722
+      Bone_161: -1380485898
+      Bone_162: -172834157
+      Bone_163: 354591860
+      Bone_164: -322286230
+      Bone_165: -1289841741
+      Bone_167: -1957979310
+      Bone_168: 1380358746
+      Bone_169: 1860643694
+      Bone_17: 146435998
+      Bone_170: 1849825047
+      Bone_171: -722092664
+      Bone_172: -1787178042
+      Bone_18: 2021654011
+      Bone_19: -1205166013
+      Bone_2: -708022207
+      Bone_20: 1999576891
+      Bone_21: -1321753339
+      Bone_23: -1596208291
+      Bone_25: -1780293802
+      Bone_27: -24214817
+      Bone_28: 648534781
+      Bone_29: -1530220303
+      Bone_3: -1318862396
+      Bone_31: 1814986544
+      Bone_32: -204492152
+      Bone_33: 1005703446
+      Bone_35: 1918215763
+      Bone_37: 1163054821
+      Bone_39: 1594222329
+      Bone_4: 1367474113
+      Bone_40: -2026364871
+      Bone_41: 1926682522
+      Bone_43: -1927941617
+      Bone_45: 1382422553
+      Bone_47: -1527434070
+      Bone_48: -1826755822
+      Bone_49: 658589268
+      Bone_5: -1444512460
+      Bone_50: 465330247
+      Bone_51: 435948571
+      Bone_52: 2002305981
+      Bone_53: -434380798
+      Bone_54: -2043188708
+      Bone_55: 10970696
+      Bone_56: -1018431010
+      Bone_57: -16625386
+      Bone_58: 1635528680
+      Bone_59: 1472305074
+      Bone_6: -1107781935
+      Bone_60: 2046771426
+      Bone_61: 844016920
+      Bone_62: -1496598533
+      Bone_63: -1173554126
+      Bone_64: 1600045972
+      Bone_65: -1066082375
+      Bone_66: -1055476166
+      Bone_67: 44258662
+      Bone_68: -1826936839
+      Bone_69: 726626687
+      Bone_7: 146200252
+      Bone_70: -342665480
+      Bone_71: 632732005
+      Bone_72: -1962378836
+      Bone_73: -2016781406
+      Bone_74: 787437714
+      Bone_75: -764709247
+      Bone_76: -1849235291
+      Bone_77: 1909702156
+      Bone_78: 1274405453
+      Bone_79: -1687542550
+      Bone_8: 1169527208
+      Bone_80: 1635863813
+      Bone_81: -1911911265
+      Bone_82: 744847900
+      Bone_83: -1511471095
+      Bone_84: -1156371809
+      Bone_85: 976719415
+      Bone_86: 1877357781
+      Bone_87: 1999385691
+      Bone_88: 1999217693
+      Bone_89: -1751891756
+      Bone_9: 2132740660
+      Bone_91: -226236043
+      Bone_92: -1755320014
+      Bone_93: 1311755921
+      Bone_94: -50854840
+      Bone_95: -1125291311
+      Bone_96: -25114700
+      Bone_97: 23417204
+      Bone_98: -1049407053
+      Bone_99: 1860154316
+      Bow_1: 819724522
+      Bow_2: 971711677
+      Bow_3: -760604763
+      Club: 1305168803
+      ClubBig: 40983377
+      Club_2: 474506550
+      Dagger: 231717376
+      Glaive: -732164426
+      Quiver: 634955053
+      Scepter: 1207452470
+      Scythe: -1669503101
+      Shield_: -1752292433
+      Shield_1: -1484713351
+      Shield_2: 1881077860
+      Shield_4: 1240304327
+      Spear: -1593755135
+      Trident: 1997585562
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
