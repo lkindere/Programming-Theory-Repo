@@ -7,13 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Camera cam;
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private float mouseSpeed = 0.01f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+
     void Update()
     {
         float verticalInput = Input.GetAxis("Vertical");
@@ -31,5 +26,6 @@ public class PlayerController : MonoBehaviour
         float verticalMouse = Input.GetAxis("Mouse Y");
 
         cam.transform.RotateAround(transform.position, Vector3.up, horizontalMouse);
+        cam.transform.Rotate(Vector3.left, verticalMouse);
     }
 }

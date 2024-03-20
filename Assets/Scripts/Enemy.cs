@@ -4,31 +4,46 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] protected GameObject weapon;
+    protected Animator animator;
     protected GameObject currentTarget;
     protected float movementSpeed;
     protected float attackRangeMin;
     protected float attackRangeMax;
-    // Start is called before the first frame update
-    void Start()
+    
+    virtual protected void Start()
     {
+        animator = gameObject.GetComponentInChildren<Animator>();
+        SetStats();
+    }
+
+    virtual protected void SetStats() {
         movementSpeed = 2.0f;
         attackRangeMin = 0.75f;
         attackRangeMax = 1.25f;
     }
 
-    // Update is called once per frame
-    void Update()
+    virtual protected void Update()
     {
         SetTarget();
         MoveToTarget();
         RotateTowardsTarget();
+        Attack();
+    }
+
+    virtual protected void Attack() {
+        Weapon weaponScript = weapon.GetComponent<Weapon>();
+
+        if (weaponScript.canAttack && WithinRange(currentTarget)) {
+            weaponScript.Attack(currentTarget);
+        }
     }
 
     virtual protected void SetTarget() {
         currentTarget = FindClosestTarget(GetAllTargets());
     }
 
-    protected virtual GameObject[] GetAllTargets() {
+    virtual protected GameObject[] GetAllTargets() {
         return GameObject.FindGameObjectsWithTag("Target");
     }
     
@@ -73,10 +88,16 @@ public class Enemy : MonoBehaviour
     }
 
     virtual protected void MoveToTarget() {
-        if (GetDistanceToTarget(currentTarget) > attackRangeMax)
+        if (GetDistanceToTarget(currentTarget) > attackRangeMax) {
             transform.position += movementSpeed * Time.deltaTime * GetDirectionToTarget(currentTarget);
-        else if (GetDistanceToTarget(currentTarget) < attackRangeMin)
+            animator.SetBool("isRunning_b", true);
+        }
+        else if (GetDistanceToTarget(currentTarget) < attackRangeMin) {
             transform.position += movementSpeed * Time.deltaTime * GetDirectionFromTarget(currentTarget);
+            animator.SetBool("isRunning_b", true);
+        }
+        else
+            animator.SetBool("isRunning_b", false);
     }
 
     protected void RotateTowardsTarget() {
@@ -105,5 +126,9 @@ public class Enemy : MonoBehaviour
         }
 
         return (pos - targetPos).normalized;
+    }
+
+    virtual protected bool WithinRange(GameObject target) {
+        return (GetDistanceToTarget(currentTarget) < attackRangeMax);
     }
 }

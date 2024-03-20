@@ -1,0 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WeaponMagic : Weapon
+{
+    [SerializeField] private GameObject magicEffect;
+    private Vector3 targetPosition;
+
+    // POLYMORPHISM
+    override protected void Update()
+    {
+        if (!isAttacking)
+            return;
+
+        animationElapsedTime += Time.deltaTime;
+        LerpWeaponAnimation();
+    }
+
+    // POLYMORPHISM
+    override public void Attack(GameObject target) {
+        targetPosition = target.transform.position;
+        SpawnMagicEffect();
+        StartCoroutine(AttackDelay(target.GetComponent<Target>()));
+        isAttacking = true;
+        canAttack = false;
+    }
+    private void SpawnMagicEffect() {
+        GameObject effect = Instantiate(magicEffect, targetPosition, magicEffect.transform.rotation);
+        StartCoroutine(DestroyMagicInstance(effect));
+    }
+
+    private IEnumerator DestroyMagicInstance(GameObject magicEffectInstance) {
+        yield return new WaitForSeconds(attackAnimationDuration);
+
+        Destroy(magicEffectInstance);
+    }
+}

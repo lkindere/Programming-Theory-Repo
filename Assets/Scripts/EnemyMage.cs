@@ -2,21 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class EnemyMage : Enemy
 {
-    // Start is called before the first frame update
-    void Start()
+    // POLYMORPHISM
+    override protected void SetStats()
     {
-        movementSpeed = 3.0f;
-        attackRangeMin = 2.0f;
-        attackRangeMax = 5.0f;
+        movementSpeed = 1.0f;
+        attackRangeMin = 5.0f;
+        attackRangeMax = 6.0f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        SetTarget();
-        MoveToTarget();
-        RotateTowardsTarget();
+    // POLYMORPHISM
+    override protected GameObject[] GetAllTargets() {
+        GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
+        GameObject[] flyingTargets = GameObject.FindGameObjectsWithTag("FlyingTarget");
+        
+        GameObject[] allTargets = new GameObject[targets.Length + flyingTargets.Length];
+
+        for (int i = 0; i < targets.Length; ++i)
+            allTargets[i] = targets[i];
+        for (int i = 0; i < flyingTargets.Length; ++i)
+            allTargets[targets.Length + i] = flyingTargets[i];
+        
+        return allTargets;
     }
 }

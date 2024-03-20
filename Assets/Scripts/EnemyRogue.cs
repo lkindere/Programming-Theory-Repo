@@ -5,19 +5,12 @@ using UnityEngine;
 // INHERITANCE
 public class EnemyRogue : Enemy
 {
-    // Start is called before the first frame update
-    void Start()
+    // POLYMORPHISM
+    override protected void SetStats()
     {
         movementSpeed = 3.0f;
         attackRangeMin = 5.0f;
         attackRangeMax = 10.0f;
-    }
-
-    void Update()
-    {
-        SetTarget();
-        MoveToTarget();
-        RotateTowardsTarget();
     }
 
     // POLYMORPHISM
