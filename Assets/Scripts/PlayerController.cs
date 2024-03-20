@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     [SerializeField] private float speed = 5.0f;
-    [SerializeField] private float rotateSpeed = 50.0f;
+    [SerializeField] private float mouseSpeed = 0.01f;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +27,9 @@ public class PlayerController : MonoBehaviour
         transform.position += verticalInput * speed * Time.deltaTime  * forward;
         transform.position += horizontalInput * speed * Time.deltaTime * right;
 
-        if (Input.GetKey(KeyCode.Q))
-            cam.transform.RotateAround(transform.position, Vector3.up, rotateSpeed * Time.deltaTime);
-        if (Input.GetKey(KeyCode.E))
-            cam.transform.RotateAround(transform.position, Vector3.up, -rotateSpeed * Time.deltaTime);
+        float horizontalMouse = Input.GetAxis("Mouse X");
+        float verticalMouse = Input.GetAxis("Mouse Y");
+
+        cam.transform.RotateAround(transform.position, Vector3.up, horizontalMouse);
     }
 }
