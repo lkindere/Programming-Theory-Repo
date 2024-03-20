@@ -11,6 +11,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        HandleKeyboardInput();
+        HandleMouseInput();
+    }
+
+    // ABSTRACTION
+    private void HandleKeyboardInput() {
         float verticalInput = Input.GetAxis("Vertical");
         float horizontalInput = Input.GetAxis("Horizontal");
 
@@ -21,7 +27,10 @@ public class PlayerController : MonoBehaviour
 
         transform.position += verticalInput * speed * Time.deltaTime  * forward;
         transform.position += horizontalInput * speed * Time.deltaTime * right;
+    }
 
+    // ABSTRACTION
+    private void HandleMouseInput() {
         float horizontalMouse = Input.GetAxis("Mouse X");
         float verticalMouse = Input.GetAxis("Mouse Y");
 

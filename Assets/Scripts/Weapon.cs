@@ -27,6 +27,7 @@ public class Weapon : MonoBehaviour
         LerpWeaponAnimation();
     }
 
+    // ABSTRACTION
     virtual protected void LerpWeaponAnimation() {
         float t = animationElapsedTime / attackAnimationDuration;
         if (t <= 0.5)
@@ -41,13 +42,14 @@ public class Weapon : MonoBehaviour
         transform.localEulerAngles = new Vector3(x, y, z);
     }
     
-
+    // ABSTRACTION
     virtual public void Attack(GameObject target) {
         StartCoroutine(AttackDelay(target.GetComponent<Target>()));
         isAttacking = true;
         canAttack = false;
     }
 
+    // ABSTRACTION
     virtual protected IEnumerator AttackDelay(Target target) {
         yield return new WaitForSeconds(attackAnimationDuration);
 
@@ -60,6 +62,7 @@ public class Weapon : MonoBehaviour
         StartCoroutine(AttackInterval());
     }
 
+    // ABSTRACTION
     virtual protected IEnumerator AttackInterval() {
         yield return new WaitForSeconds(attackCooldown);
 

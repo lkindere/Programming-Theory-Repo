@@ -14,13 +14,15 @@ public class Target : MonoBehaviour
         fullBarScale = healthBar.transform.localScale.x;
     }
 
+    // ABSTRACTION
     private void UpdateHealthbar() {
         Vector3 scale = healthBar.transform.localScale;
-        scale.x = (currentHealth / maxHealth) * fullBarScale;
+        scale.x = currentHealth / maxHealth * fullBarScale;
 
         healthBar.transform.localScale = scale;
     }
 
+    // ABSTRACTION
     public void TakeDamage(int damage) {
         currentHealth -= damage;
 

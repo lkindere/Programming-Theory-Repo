@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
         SetStats();
     }
 
+    // ABSTRACTION
     virtual protected void SetStats() {
         movementSpeed = 2.0f;
         attackRangeMin = 0.75f;
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
         Attack();
     }
 
+    // ABSTRACTION
     virtual protected void Attack() {
         Weapon weaponScript = weapon.GetComponent<Weapon>();
 
@@ -39,14 +41,17 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     virtual protected void SetTarget() {
         currentTarget = FindClosestTarget(GetAllTargets());
     }
 
+    // ABSTRACTION
     virtual protected GameObject[] GetAllTargets() {
         return GameObject.FindGameObjectsWithTag("Target");
     }
     
+    // ABSTRACTION
     protected GameObject FindClosestTarget(GameObject[] targets) {
         GameObject closest = targets[0];
         float closestSqrtDistance = GetSqrDistanceToTarget(targets[0]);
@@ -63,6 +68,7 @@ public class Enemy : MonoBehaviour
         return closest;
     }
 
+    // ABSTRACTION
     protected float GetSqrDistanceToTarget(GameObject target, bool ignoreVertical = true) {
         Vector3 pos = transform.position;
         Vector3 targetPos = target.transform.position;
@@ -75,6 +81,7 @@ public class Enemy : MonoBehaviour
         return (pos - targetPos).sqrMagnitude;
     }
 
+    // ABSTRACTION
     protected float GetDistanceToTarget(GameObject target, bool ignoreVertical = true) {
         Vector3 pos = transform.position;
         Vector3 targetPos = target.transform.position;
@@ -87,6 +94,7 @@ public class Enemy : MonoBehaviour
         return (pos - targetPos).magnitude;
     }
 
+    // ABSTRACTION
     virtual protected void MoveToTarget() {
         if (GetDistanceToTarget(currentTarget) > attackRangeMax) {
             transform.position += movementSpeed * Time.deltaTime * GetDirectionToTarget(currentTarget);
@@ -100,10 +108,12 @@ public class Enemy : MonoBehaviour
             animator.SetBool("isRunning_b", false);
     }
 
+    // ABSTRACTION
     protected void RotateTowardsTarget() {
         transform.right = GetDirectionToTarget(currentTarget);
     }
 
+    // ABSTRACTION
     protected Vector3 GetDirectionToTarget(GameObject target, bool ignoreVertical = true) {
         Vector3 pos = transform.position;
         Vector3 targetPos = target.transform.position;
@@ -116,6 +126,7 @@ public class Enemy : MonoBehaviour
         return (targetPos - pos).normalized;
     }
 
+    // ABSTRACTION
     protected Vector3 GetDirectionFromTarget(GameObject target, bool ignoreVertical = true) {
         Vector3 pos = transform.position;
         Vector3 targetPos = target.transform.position;
@@ -128,7 +139,8 @@ public class Enemy : MonoBehaviour
         return (pos - targetPos).normalized;
     }
 
+    // ABSTRACTION
     virtual protected bool WithinRange(GameObject target) {
-        return (GetDistanceToTarget(currentTarget) < attackRangeMax);
+        return GetDistanceToTarget(currentTarget) < attackRangeMax;
     }
 }

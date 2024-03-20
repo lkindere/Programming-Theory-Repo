@@ -25,11 +25,14 @@ public class WeaponMagic : Weapon
         isAttacking = true;
         canAttack = false;
     }
+    
+    // ABSTRACTION
     private void SpawnMagicEffect() {
         GameObject effect = Instantiate(magicEffect, targetPosition, magicEffect.transform.rotation);
         StartCoroutine(DestroyMagicInstance(effect));
     }
 
+    // ABSTRACTION
     private IEnumerator DestroyMagicInstance(GameObject magicEffectInstance) {
         yield return new WaitForSeconds(attackAnimationDuration);
 

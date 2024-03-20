@@ -11,6 +11,7 @@ public class FaceCamera : MonoBehaviour
         transform.forward = -DirectionToCamera();
     }
 
+    // ABSTRACTION
     Vector3 DirectionToCamera() {
         Vector3 pos = transform.position;
         Vector3 targetPos = cam.transform.position;

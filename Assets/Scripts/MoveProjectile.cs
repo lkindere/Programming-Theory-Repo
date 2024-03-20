@@ -24,6 +24,7 @@ public class MoveProjectile : MonoBehaviour
             StartCoroutine(DestroyObject());
     }
 
+    // ABSTRACTION
     private Vector3 Evaluate(float t) {
         Vector3 ac = Vector3.Lerp(startPos, controlPos, t);
         Vector3 cb = Vector3.Lerp(controlPos, targetPos, t);
@@ -31,6 +32,7 @@ public class MoveProjectile : MonoBehaviour
         return Vector3.Lerp(ac, cb, t);
     }
 
+    // ABSTRACTION
     private IEnumerator DestroyObject() {
         yield return new WaitForSeconds(1.0f);
 

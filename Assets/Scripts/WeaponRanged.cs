@@ -16,6 +16,7 @@ public class WeaponRanged : Weapon
         LerpWeaponAnimation();
     }
 
+    // POLYMORPHISM
     override protected void LerpWeaponAnimation() {
         float t = animationElapsedTime / attackAnimationDuration;
         if (t <= 0.5)
@@ -27,13 +28,15 @@ public class WeaponRanged : Weapon
         GetComponent<SpriteRenderer>().sprite = weaponSprites[currentSprite];
     }
 
+    // POLYMORPHISM
     override public void Attack(GameObject target) {
         StartCoroutine(AttackDelay(target.GetComponent<Target>()));
         StartCoroutine(SpawnProjectile(target));
         isAttacking = true;
         canAttack = false;
     }
-
+    
+    // ABSTRACTION
     private IEnumerator SpawnProjectile(GameObject target) {
         yield return new WaitForSeconds(attackAnimationDuration * 0.8f);
 
