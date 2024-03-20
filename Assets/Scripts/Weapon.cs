@@ -12,7 +12,8 @@ public class Weapon : MonoBehaviour
     protected Vector3 initialRotation;
     protected float animationElapsedTime = 0.0f;
     protected bool isAttacking = false;
-    public bool canAttack = true;
+    // ENCAPSULATION
+    public bool canAttack { get; protected set; } = true ;
 
     virtual protected void Start() {
         initialPosition = transform.localPosition;

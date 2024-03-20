@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private float mouseSpeed = 0.01f;
 
-
     void Update()
     {
         HandleKeyboardInput();

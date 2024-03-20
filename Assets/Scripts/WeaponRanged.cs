@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+// INHERITANCE
 public class WeaponRanged : Weapon
 {
     [SerializeField] private GameObject projectilePrefab;
@@ -35,7 +36,7 @@ public class WeaponRanged : Weapon
         isAttacking = true;
         canAttack = false;
     }
-    
+
     // ABSTRACTION
     private IEnumerator SpawnProjectile(GameObject target) {
         yield return new WaitForSeconds(attackAnimationDuration * 0.8f);

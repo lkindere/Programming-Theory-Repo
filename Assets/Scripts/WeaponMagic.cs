@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class WeaponMagic : Weapon
 {
     [SerializeField] private GameObject magicEffect;
@@ -25,7 +26,7 @@ public class WeaponMagic : Weapon
         isAttacking = true;
         canAttack = false;
     }
-    
+
     // ABSTRACTION
     private void SpawnMagicEffect() {
         GameObject effect = Instantiate(magicEffect, targetPosition, magicEffect.transform.rotation);
